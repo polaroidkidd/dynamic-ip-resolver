@@ -33,7 +33,7 @@ DYNAMIC_IP_RESOLVER_RETRIEVED_IP=$(dig +short myip.opendns.com @resolver1.opendn
 
 if [[ "$DYNAMIC_IP_RESOLVER_DNS_IP" != "$DYNAMIC_IP_RESOLVER_RETRIEVED_IP" ]]; then
   printf '%s %s\n' "$(date): IPs do not match. Updating DNS Entries"
-  #    for i in $(doctl compute domain records list dle.dev | grep " A " | awk '{print $1}'); do doctl compute domain records update dle.dev --record-id $i --record-data `dig +short myip.opendns.com @resolver1.opendns.com`; done
+  for i in $(doctl compute domain records list dle.dev | grep " A " | awk '{print $1}'); do doctl compute domain records update dle.dev --record-id $i --record-data `dig +short myip.opendns.com @resolver1.opendns.com`; done
   wait
   printf '%s %s\n' "$(date): Updating ENV DYNAMIC_IP_RESOLVER_DNS_IP to contain: $DYNAMIC_IP_RESOLVER_RETRIEVED_IP"
 
