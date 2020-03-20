@@ -1,6 +1,6 @@
 {
   "name": "dynamic-ip-resolver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "cronjob to automatically detect changes in dynamically assigned ip addresses and apply them to the appropriate digital ocean project & subdomains",
   "repository": {
     "type": "git",
