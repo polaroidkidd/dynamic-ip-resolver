@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/polaroidkidd/dynamic-ip-resolver/compare/v1.1.0...v1.0.3) (2020-03-20)
+
+
+### Bug Fixes
+
+* move back to env file ([f13b068](https://github.com/polaroidkidd/dynamic-ip-resolver/commit/f13b06882c9cc7667fb6fcb27ce4590b5129068c))
+
 ### [1.0.2](https://github.com/polaroidkidd/dynamic-ip-resolver/compare/v1.0.1...v1.0.2) (2020-03-20)
 
 
